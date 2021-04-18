@@ -25,6 +25,7 @@ Optional items:
 - [x] Support multiple browsers
   - [x] Chrome
   - [x] Firefox
+- [ ] Capture a screenshot if test fails
 - [ ] Provide CI/CD integration solution
 - [ ] Abibility to run test in parallel
 - [ ] Cloud integration solution
