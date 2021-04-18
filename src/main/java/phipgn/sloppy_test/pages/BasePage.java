@@ -10,8 +10,7 @@ public abstract class BasePage {
 	protected abstract WebDriver getDriver();
 	
 	protected void log(String message) {
-		System.out.println(message);
-		Reporter.log(message);
+		Reporter.log(message, true);
 	}
 	
 	private WebElement findElement(By by) {
