@@ -37,6 +37,7 @@ public class HomePage extends BasePage {
 	public By hourlyForecastText = By.xpath("//div[@id='weather-widget']/div[@class='section-content']//h3[text()='Hourly forecast']");
 	public By minuteForecastText = By.xpath("//div[@id='weather-widget']/div[@class='section-content']//h3[text()='Minute forecast']");
 	public By eightDayForecastText = By.xpath("//div[@id='weather-widget']/div[@class='section-content']//h3[text()='8-day forecast']");
+	public By mapSection = By.cssSelector(".map-section");
 	
 	public void searchCity(String cityName) {
 		inputText(searchCityInput, cityName);
