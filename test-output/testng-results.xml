@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Inputting London into [[ChromeDriver: chrome on WINDOWS (aa56a6f19eee2d8ca962920b01bc7ce5)] -> xpath: //input[@placeholder='Search city']]]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on [[ChromeDriver: chrome on WINDOWS (aa56a6f19eee2d8ca962920b01bc7ce5)] -> css selector: .search button[type='submit']]]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on [[ChromeDriver: chrome on WINDOWS (aa56a6f19eee2d8ca962920b01bc7ce5)] -> css selector: .search .search-dropdown-menu li]]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="17114" started-at="2021-04-18T07:01:04 ICT" finished-at="2021-04-18T07:01:21 ICT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="17114" started-at="2021-04-18T07:01:04 ICT" finished-at="2021-04-18T07:01:21 ICT">
+      <class name="phipgn.sloppy_test.tests.SearchTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:phipgn.sloppy_test.tests.SearchTest@10bbd20a]" name="beforeTest" is-config="true" duration-ms="9218" started-at="2021-04-18T07:01:04 ICT" finished-at="2021-04-18T07:01:13 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="test_U001_SearchValidCities()[pri:0, instance:phipgn.sloppy_test.tests.SearchTest@10bbd20a]" name="test_U001_SearchValidCities" duration-ms="3111" started-at="2021-04-18T07:01:13 ICT" finished-at="2021-04-18T07:01:16 ICT">
+          <reporter-output>
+            <line>
+              <![CDATA[Inputting London into [[ChromeDriver: chrome on WINDOWS (aa56a6f19eee2d8ca962920b01bc7ce5)] -> xpath: //input[@placeholder='Search city']]]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on [[ChromeDriver: chrome on WINDOWS (aa56a6f19eee2d8ca962920b01bc7ce5)] -> css selector: .search button[type='submit']]]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on [[ChromeDriver: chrome on WINDOWS (aa56a6f19eee2d8ca962920b01bc7ce5)] -> css selector: .search .search-dropdown-menu li]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test_U001_SearchValidCities -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:phipgn.sloppy_test.tests.SearchTest@10bbd20a]" name="afterTest" is-config="true" duration-ms="4763" started-at="2021-04-18T07:01:16 ICT" finished-at="2021-04-18T07:01:21 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- phipgn.sloppy_test.tests.SearchTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
