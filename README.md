@@ -5,7 +5,7 @@ This is a take-home assignment from NAB. I made up an automation test project an
 **Part 1: Test Design and Bug Challenge**
 - [x] Create a test approach
 - [x] Design test cases
-- [ ] Find bugs and create a defects report
+- [x] Find bugs and create a Defects Report
 
 **Part 2: UI Automation**
 
@@ -25,6 +25,7 @@ Optional items:
 - [x] Support multiple browsers
   - [x] Chrome
   - [x] Firefox
+- [ ] Capture a screenshot if test fails
 - [ ] Provide CI/CD integration solution
 - [ ] Abibility to run test in parallel
 - [ ] Cloud integration solution
