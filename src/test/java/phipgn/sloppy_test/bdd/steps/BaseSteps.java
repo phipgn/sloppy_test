@@ -1,4 +1,4 @@
-package phipgn.sloppy_test.tests;
+package phipgn.sloppy_test.bdd.steps;
 
 import java.time.Duration;
 import java.util.function.Function;
@@ -6,7 +6,6 @@ import java.util.function.Function;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
@@ -15,7 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import phipgn.sloppy_test.drivers.BrowserFactory;
 import phipgn.sloppy_test.helpers.ConfigFileHelper;
 
-public abstract class BaseTest {
+public class BaseSteps {
 	protected void initDriverAndLoadApplication() {
 		ConfigFileHelper config = new ConfigFileHelper();
 		BrowserFactory.initBrowser(config.getProperty(ConfigFileHelper.KEY_BROWSER));
@@ -33,10 +32,10 @@ public abstract class BaseTest {
 	}
 	
 	protected void waitUntilElementDisappears(By by, int timeout) {
-		WebDriverWait wait = new WebDriverWait(getDriver(), timeout);
+		WebDriverWait wait = new WebDriverWait(getDriver(), 10);
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(by));
 	}
-
+	
 	protected void waitUntilElementVisible(final By by, int timeout) {
 	    Wait<WebDriver> wait = new FluentWait<WebDriver>(getDriver())
                 .withTimeout(Duration.ofSeconds(timeout))
@@ -53,9 +52,5 @@ public abstract class BaseTest {
 	
 	protected boolean isElementDisplayed(By by) {
 		return getDriver().findElements(by).size() > 0;
-	}
-	
-	protected WebElement findElement(By by) {
-		return getDriver().findElement(by);
 	}
 }

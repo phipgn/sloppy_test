@@ -6,8 +6,9 @@
       <class name="phipgn.sloppy_test.tests.SearchTest">
         <methods>
           <include name="test_U001_SearchValidCities"/>
-          <include name="afterTest"/>
+          <include name="beforeMethod"/>
           <include name="beforeTest"/>
+          <include name="afterMethod"/>
         </methods>
       </class> <!-- phipgn.sloppy_test.tests.SearchTest -->
     </classes>

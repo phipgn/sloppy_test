@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Apr 18 07:01:04 ICT 2021</td>
+<td>Started on:</td><td>Sun Apr 18 17:23:49 ICT 2021</td>
 </tr>
-<tr><td>Total time:</td><td>17 seconds (17114 ms)</td>
+<tr><td>Total time:</td><td>54 seconds (54242 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,19 +75,73 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='phipgn.sloppy_test.tests.SearchTest.test_U001_SearchValidCities()'><b>test_U001_SearchValidCities</b><br>Test class: phipgn.sloppy_test.tests.SearchTest<br/>
-<a href="#Output-1455695758" onClick='toggleBox("Output-1455695758", this, "Show output", "Hide output");'>Show output</a>
+<td title='phipgn.sloppy_test.tests.SearchTest.test_U001_SearchValidCities()'><b>test_U001_SearchValidCities</b><br>Test class: phipgn.sloppy_test.tests.SearchTest<br>Parameters: London<br/>
+<a href="#Output-2082557120" onClick='toggleBox("Output-2082557120", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1455695758" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1455695758">
-Inputting London into [[ChromeDriver: chrome on WINDOWS (aa56a6f19eee2d8ca962920b01bc7ce5)] -> xpath: //input[@placeholder='Search city']]<br/>
-Clicking on [[ChromeDriver: chrome on WINDOWS (aa56a6f19eee2d8ca962920b01bc7ce5)] -> css selector: .search button[type='submit']]<br/>
-Clicking on [[ChromeDriver: chrome on WINDOWS (aa56a6f19eee2d8ca962920b01bc7ce5)] -> css selector: .search .search-dropdown-menu li]<br/>
+<a href="#Output-2082557120" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2082557120">
+Inputting 'London' into By.xpath: //input[@placeholder='Search city']<br/>
+Clicking on By.cssSelector: .search button[type='submit']<br/>
+Clicking on [[ChromeDriver: chrome on WINDOWS (2bc46b52250b4321d01620bf8798d6b4)] -> css selector: .search .search-dropdown-menu li]<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>phipgn.sloppy_test.tests.SearchTest@4232c52b</td></tr>
+<tr>
+<td title='phipgn.sloppy_test.tests.SearchTest.test_U001_SearchValidCities()'><b>test_U001_SearchValidCities</b><br>Test class: phipgn.sloppy_test.tests.SearchTest<br>Parameters: Haiphong<br/>
+<a href="#Output-1988644427" onClick='toggleBox("Output-1988644427", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1988644427" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1988644427">
+Inputting 'Haiphong' into By.xpath: //input[@placeholder='Search city']<br/>
+Clicking on By.cssSelector: .search button[type='submit']<br/>
+Clicking on [[ChromeDriver: chrome on WINDOWS (516ffea7bc05f74bf623f1a078191ae5)] -> css selector: .search .search-dropdown-menu li]<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>phipgn.sloppy_test.tests.SearchTest@4232c52b</td></tr>
+<tr>
+<td title='phipgn.sloppy_test.tests.SearchTest.test_U001_SearchValidCities()'><b>test_U001_SearchValidCities</b><br>Test class: phipgn.sloppy_test.tests.SearchTest<br>Parameters: Hanoi<br/>
+<a href="#Output-1262110193" onClick='toggleBox("Output-1262110193", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1262110193" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1262110193">
+Inputting 'Hanoi' into By.xpath: //input[@placeholder='Search city']<br/>
+Clicking on By.cssSelector: .search button[type='submit']<br/>
+Clicking on [[ChromeDriver: chrome on WINDOWS (4df90f75b35e7395436eb220e8db3621)] -> css selector: .search .search-dropdown-menu li]<br/>
 </div>
 </td>
 <td></td>
 <td>3</td>
-<td>phipgn.sloppy_test.tests.SearchTest@10bbd20a</td></tr>
+<td>phipgn.sloppy_test.tests.SearchTest@4232c52b</td></tr>
+<tr>
+<td title='phipgn.sloppy_test.tests.SearchTest.test_U002_SearchInvalidCities()'><b>test_U002_SearchInvalidCities</b><br>Test class: phipgn.sloppy_test.tests.SearchTest<br>Parameters: ~@+^-<br/>
+<a href="#Output-2054451662" onClick='toggleBox("Output-2054451662", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2054451662" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2054451662">
+Inputting '~@+^-' into By.xpath: //input[@placeholder='Search city']<br/>
+Clicking on By.cssSelector: .search button[type='submit']<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>phipgn.sloppy_test.tests.SearchTest@4232c52b</td></tr>
+<tr>
+<td title='phipgn.sloppy_test.tests.SearchTest.test_U002_SearchInvalidCities()'><b>test_U002_SearchInvalidCities</b><br>Test class: phipgn.sloppy_test.tests.SearchTest<br>Parameters: nobita<br/>
+<a href="#Output-832432849" onClick='toggleBox("Output-832432849", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-832432849" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-832432849">
+Inputting 'nobita' into By.xpath: //input[@placeholder='Search city']<br/>
+Clicking on By.cssSelector: .search button[type='submit']<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>phipgn.sloppy_test.tests.SearchTest@4232c52b</td></tr>
 </table><p>
 </body>
 </html>

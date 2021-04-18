@@ -1,6 +1,6 @@
 package phipgn.sloppy_test.drivers;
 
-public enum BrowserName {
-	CHROME,
-    FIREFOX
+public class BrowserName {
+	public static final String CHROME = "chrome";
+	public static final String FIREFOX = "firefox";
 }
