@@ -5,7 +5,7 @@ This is a take-home assignment from NAB. I made up an automation test project an
 **Part 1: Test Design and Bug Challenge**
 - [x] Create a test approach
 - [x] Design test cases
-- [ ] Find bugs and create a defects report
+- [x] Find bugs and create a Defects Report
 
 **Part 2: UI Automation**
 
