@@ -1,5 +1,5 @@
-# sloppy_test
-A take-home assignment from NAB
+# Sloppy Test
+This is a take-home assignment from NAB. I made up an automation test project and named it "Sloppy Test".
 
 ## BDD Approach
 I apply Cucumber framework. 
