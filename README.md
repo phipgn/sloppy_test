@@ -57,6 +57,9 @@ In Eclipse, under Windows > Preferences > Java > Installed JREs: Make sure you s
 ![image](https://user-images.githubusercontent.com/22786385/115308701-5436ab00-a195-11eb-93ce-3a19d8cf00dd.png)
 ![image](https://user-images.githubusercontent.com/22786385/115308654-41bc7180-a195-11eb-9a8f-cca95c0219c3.png)
 
+You can configure to run the tests with chrome or firefox as well:
+![image](https://user-images.githubusercontent.com/22786385/115310887-d4124480-a198-11eb-80d8-b1f48b359a95.png)
+
 #### The TestNG pack:
 
 Right click on Search Test > Run as > TestNG
