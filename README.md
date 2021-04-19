@@ -1,5 +1,7 @@
 # Sloppy Test
 This is a take-home assignment from NAB. I made up an automation test project and named it "Sloppy Test".
+I wrote 2 UI tests (match with U001 and U002 test cases from TestCases.xlsx).
+At first, I developed the project to run the test using TestNG. Then I added the Cucumber feature into it. That's why we have 2 packs (TestNG pack and Cucumber pack) here.
 
 ## To-do checklist:
 **Part 1: Test Design and Bug Challenge**
@@ -32,7 +34,6 @@ Optional items:
 - [ ] Distribution execution
 
 ## How to run the test?
-At first, I developed the project to run the test using TestNG. Then I added the Cucumber feature into it. That's why we have 2 packs (TestNG pack and Cucumber pack) here.
 
 ### From Eclipse IDE
 #### Software requirements:
