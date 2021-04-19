@@ -32,7 +32,7 @@ Optional items:
 - [x] Capture a screenshot if test fails
 - [x] Provide CI/CD integration solution (can explain this)
 - [ ] Cloud integration solution
-- [ ] Abibility to run test in parallel (cannot make it work yet due to some technical issues)
+- [ ] Abibility to run test in parallel (cannot make it work yet due to some technical issues and tight work schedule)
 - [ ] Distribution execution
 
 ## How to run the test?
