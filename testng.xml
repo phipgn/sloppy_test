@@ -3,8 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-<!--       <class name="phipgn.sloppy_test.bdd.steps.SearchCitySteps"/> -->
       <class name="phipgn.sloppy_test.tests.SearchTest"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test>
+</suite>

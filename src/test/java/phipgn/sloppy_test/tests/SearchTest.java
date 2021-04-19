@@ -38,10 +38,10 @@ public class SearchTest extends BaseTest
 	@DataProvider(name="Valid cities")
 	public Object[][] getValidCities() {
 		return new Object[][] { 
-//			{ "London" },
+			{ "London" },
 			{ "London, GB" },
-//			{ "Haiphong" }, 
-//			{ "Hanoi" } 
+			{ "Haiphong" }, 
+			{ "Hanoi" } 
 		};
 	}
 
@@ -72,7 +72,7 @@ public class SearchTest extends BaseTest
 	public Object[][] getInvalidCities() {
 		return new Object[][] { 
 			{ "in flames" },
-//			{ "pod" }
+			{ "pod" }
 		};
 	}
 	
