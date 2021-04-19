@@ -1,5 +1,5 @@
 # Sloppy Test
-This is a take-home assignment from NAB. I made up an automation test project and named it "Sloppy Test".
+This is a take-home assignment from NAB. I made up an automation test project and named it "Sloppy Test". This is a projected based on Java/Selenium/TestNG/Cucumber/Maven.
 
 *I wrote 2 UI tests* (match with **U001** and **U002** test cases from documents\TestCases.xlsx).
 
