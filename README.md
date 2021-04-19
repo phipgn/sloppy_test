@@ -78,6 +78,8 @@ At `sloppy_test` root directory, run this command first to compile Java source f
 mvn clean compile
 ```
 
+![image](https://user-images.githubusercontent.com/22786385/115310284-bee8e600-a197-11eb-991b-dcd4ec6c368e.png)
+
 #### The TestNG pack:
 Then run this command to execute the TestNG pack from cmd:
 ```
@@ -92,3 +94,4 @@ Run this command to execute the Cucumber pack from cmd:
 java -cp target\classes;lib\* cucumber.api.cli.Main --glue phipgn.sloppy_test.bdd.steps src/test/java/phipgn/sloppy_test/bdd/features --plugin pretty
 ```
 
+![image](https://user-images.githubusercontent.com/22786385/115310243-b1336080-a197-11eb-8eaf-880d18e92001.png)
