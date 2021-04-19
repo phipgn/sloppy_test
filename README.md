@@ -50,7 +50,7 @@ Right click on Search Test > Run as > TestNG
 
 Right click on TestRunner > Run as > Junit test
 ![image](https://user-images.githubusercontent.com/22786385/115260666-2b92bf00-a15d-11eb-812c-78832c7533bf.png)
-
+![image](https://user-images.githubusercontent.com/22786385/115146698-c74efd00-a081-11eb-9dbc-f6697d05d96a.png)
 
 ### From console
 
@@ -70,4 +70,4 @@ mvn clean test -DsuiteXmlFile=testng.xml -Dmaven.test.failure.ignore=true
 
 #### The Cucumber pack:
 
-![image](https://user-images.githubusercontent.com/22786385/115146698-c74efd00-a081-11eb-9dbc-f6697d05d96a.png)
+
