@@ -25,21 +25,34 @@ Optional items:
 - [x] Support multiple browsers
   - [x] Chrome
   - [x] Firefox
-- [ ] Capture a screenshot if test fails
-- [ ] Provide CI/CD integration solution
-- [ ] Abibility to run test in parallel
-- [ ] Cloud integration solution
+- [x] Capture a screenshot if test fails
+- [x] Provide CI/CD integration solution
+- [x] Cloud integration solution (can explain this)
+- [ ] Abibility to run test in parallel (cannot make it work yet due to some technical issues)
 - [ ] Distribution execution
 
 ## How to run the test?
-**Software Requirements**
+At first, I developed the project to run the test using TestNG. Then I added the Cucumber feature into it. That's why we have 2 packs (TestNG pack and Cucumber pack) here.
+
+### From Eclipse IDE
+#### Software requirements:
 * OS: Windows 10.
 * IDE: Eclipse version 2018-09 (4.9.0).
     * TestNG plugin installed **(Make sure to untick `TestNG M2E (Maven) Integration (Optional)`)**.
     * Cucubmer plugin installed.
-* JDK 8 (1.8.0_261).
+* JDK 8 (1.8.0_261) installed.
 
-### From Eclipse IDE
+![image](https://user-images.githubusercontent.com/22786385/115309099-fce50a80-a195-11eb-9151-fa86df069b6e.png)
+![image](https://user-images.githubusercontent.com/22786385/115309163-1ab26f80-a196-11eb-8576-988c1074c791.png)
+
+Make sure to have only JDK bin added to your `Path` system variables. Please remove the Oracle Java path (if any).
+![image](https://user-images.githubusercontent.com/22786385/115308146-7a0f8000-a194-11eb-9c11-f02559d569c4.png)
+
+In Eclipse, under Windows > Preferences > Java > Installed JREs: Make sure you selected jdk directory.
+![image](https://user-images.githubusercontent.com/22786385/115308535-1043a600-a195-11eb-962a-6ecb0ec63431.png)
+
+![image](https://user-images.githubusercontent.com/22786385/115308701-5436ab00-a195-11eb-93ce-3a19d8cf00dd.png)
+![image](https://user-images.githubusercontent.com/22786385/115308654-41bc7180-a195-11eb-9a8f-cca95c0219c3.png)
 
 #### The TestNG pack:
 
@@ -53,21 +66,29 @@ Right click on TestRunner > Run as > Junit test
 ![image](https://user-images.githubusercontent.com/22786385/115146698-c74efd00-a081-11eb-9dbc-f6697d05d96a.png)
 
 ### From console
-
-#### The TestNG pack:
-
 Download Maven from: https://maven.apache.org/download.cgi `apache-maven-3.8.1-bin.zip` and extract the zip file to `C:/maven`
 
 Make sure to add Maven bin folder and JDK bin foler to environment path like this:
 ![image](https://user-images.githubusercontent.com/22786385/115259995-8f68b800-a15c-11eb-96f6-1f8d859cb2ab.png)
 
-Then run this command line to execute the TestNG pack from cmd:
+#### Compile code:
+At `sloppy_test` root directory, run this command first to compile Java source files into class files:
+
 ```
-mvn clean test -DsuiteXmlFile=testng.xml -Dmaven.test.failure.ignore=true
+mvn clean compile
+```
+
+#### The TestNG pack:
+Then run this command to execute the TestNG pack from cmd:
+```
+java -cp "target\classes;lib\*" org.testng.TestNG testng.xml
 ```
 
 ![image](https://user-images.githubusercontent.com/22786385/115259680-4a448600-a15c-11eb-8629-40fdbfe1fbad.png)
 
 #### The Cucumber pack:
-
+Run this command to execute the Cucumber pack from cmd:
+```
+java -cp target\classes;lib\* cucumber.api.cli.Main --glue phipgn.sloppy_test.bdd.steps src/test/java/phipgn/sloppy_test/bdd/features --plugin pretty
+```
 
