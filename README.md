@@ -26,8 +26,8 @@ Optional items:
   - [x] Chrome
   - [x] Firefox
 - [x] Capture a screenshot if test fails
-- [x] Provide CI/CD integration solution
-- [x] Cloud integration solution (can explain this)
+- [x] Provide CI/CD integration solution (can explain this)
+- [ ] Cloud integration solution
 - [ ] Abibility to run test in parallel (cannot make it work yet due to some technical issues)
 - [ ] Distribution execution
 
