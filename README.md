@@ -45,7 +45,7 @@ Optional items:
     * Cucubmer plugin installed.
 * JDK 8 (1.8.0_261) installed.
 
-***Please to import the slopp_test as a Maven project into Eclipse IDE***
+***Please import the slopp_test as a Maven project into Eclipse IDE***
 
 ![image](https://user-images.githubusercontent.com/22786385/115309099-fce50a80-a195-11eb-9151-fa86df069b6e.png)
 ![image](https://user-images.githubusercontent.com/22786385/115309163-1ab26f80-a196-11eb-8576-988c1074c791.png)
