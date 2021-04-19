@@ -1,11 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="0" passed="0">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
+    <line>
+      <![CDATA[Inputting 'London, GB' into By.xpath: //input[@placeholder='Search city']]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on By.cssSelector: .search button[type='submit']]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on [[ChromeDriver: chrome on WINDOWS (dc661a5b470b6974a16d8b6d91e389b3)] -> css selector: .search .search-dropdown-menu li]]]>
+    </line>
+    <line>
+      <![CDATA[Inputting 'in flames' into By.xpath: //input[@placeholder='Search city']]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on By.cssSelector: .search button[type='submit']]]>
+    </line>
   </reporter-output>
-  <suite name="Main Test Suite" duration-ms="0" started-at="2021-04-19T21:27:52Z" finished-at="2021-04-19T21:27:52Z">
+  <suite name="Suite" duration-ms="19268" started-at="2021-04-19T23:06:37Z" finished-at="2021-04-19T23:06:56Z">
     <groups>
     </groups>
-    <test name="SearchCity" duration-ms="0" started-at="2021-04-19T21:27:52Z" finished-at="2021-04-19T21:27:52Z">
+    <test name="Test" duration-ms="19268" started-at="2021-04-19T23:06:37Z" finished-at="2021-04-19T23:06:56Z">
+      <class name="phipgn.sloppy_test.tests.SearchTest">
+        <test-method status="PASS" signature="beforeTest()" name="beforeTest" is-config="true" duration-ms="6" started-at="2021-04-19T23:06:37Z" finished-at="2021-04-19T23:06:37Z">
+        </test-method>
+        <test-method status="PASS" signature="beforeMethod()" name="beforeMethod" is-config="true" duration-ms="7329" started-at="2021-04-19T23:06:37Z" finished-at="2021-04-19T23:06:44Z">
+        </test-method>
+        <test-method status="PASS" signature="test_U001_SearchValidCities(java.lang.String)" name="test_U001_SearchValidCities" duration-ms="2786" started-at="2021-04-19T23:06:44Z" finished-at="2021-04-19T23:06:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[London, GB]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)" name="afterMethod" is-config="true" duration-ms="112" started-at="2021-04-19T23:06:47Z" finished-at="2021-04-19T23:06:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult: test_U001_SearchValidCities STATUS:SUCCESS METHOD:phipgn.sloppy_test.tests.SearchTest.test_U001_SearchValidCities(java.lang.String)Inputting 'London, GB' into By.xpath: //input[@placeholder='Search city']]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="beforeMethod()" name="beforeMethod" is-config="true" duration-ms="7173" started-at="2021-04-19T23:06:47Z" finished-at="2021-04-19T23:06:54Z">
+        </test-method>
+        <test-method status="PASS" signature="test_U002_SearchInvalidCities(java.lang.String)" name="test_U002_SearchInvalidCities" duration-ms="1739" started-at="2021-04-19T23:06:54Z" finished-at="2021-04-19T23:06:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[in flames]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)" name="afterMethod" is-config="true" duration-ms="116" started-at="2021-04-19T23:06:56Z" finished-at="2021-04-19T23:06:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult: test_U002_SearchInvalidCities STATUS:SUCCESS METHOD:phipgn.sloppy_test.tests.SearchTest.test_U002_SearchInvalidCities(java.lang.String)Inputting 'in flames' into By.xpath: //input[@placeholder='Search city']]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+      </class>
     </test>
   </suite>
 </testng-results>

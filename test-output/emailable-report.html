@@ -29,11 +29,36 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">SearchCity</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">19.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <a id="summary"></a>
 <table cellspacing=0 cellpadding=0 class="passed">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
+<tr><th colspan="4">Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">phipgn.sloppy_test.tests.SearchTest<td><a href="#m1"><b>test_U002_SearchInvalidCities</b>  </a></td><td class="numi">1</td><td class="numi">1739</td></tr><tr class="passedodd"><td><a href="#m2"><b>test_U001_SearchValidCities</b>  </a></td><td class="numi">1</td><td class="numi">2786</td></tr>
 </table>
-<h1>SearchCity</h1>
+<h1>Test</h1>
+<a id="m1"></a><h2>phipgn.sloppy_test.tests.SearchTest:test_U002_SearchInvalidCities</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">in flames</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+Inputting 'in flames' into By.xpath: //input[@placeholder='Search city']<br/>
+Clicking on By.cssSelector: .search button[type='submit']<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>phipgn.sloppy_test.tests.SearchTest:test_U001_SearchValidCities</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">London, GB</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+Inputting 'London, GB' into By.xpath: //input[@placeholder='Search city']<br/>
+Clicking on By.cssSelector: .search button[type='submit']<br/>
+Clicking on [[ChromeDriver: chrome on WINDOWS (dc661a5b470b6974a16d8b6d91e389b3)] -> css selector: .search .search-dropdown-menu li]<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

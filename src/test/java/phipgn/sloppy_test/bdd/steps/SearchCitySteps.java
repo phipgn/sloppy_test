@@ -1,7 +1,6 @@
 package phipgn.sloppy_test.bdd.steps;
 
 import org.junit.Assert;
-import org.testng.ITestResult;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
@@ -20,9 +19,6 @@ public class SearchCitySteps extends BaseTest {
 	@Before(order = 1)
 	public void beforeScenario() {
 		error = "";
-//		initDriverAndLoadApplication();
-//		homePage = new HomePage(getDriver());
-//		waitUntilElementDisappears(homePage.loader, 10);
 	}
 
 	@After
