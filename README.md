@@ -35,7 +35,7 @@ Optional items:
 **Software Requirements**
 * OS: Windows 10.
 * IDE: Eclipse version 2018-09 (4.9.0).
-    * TestNG plugin installed.
+    * TestNG plugin installed **(Make sure to untick `TestNG M2E (Maven) Integration (Optional)`)**.
     * Cucubmer plugin installed.
 * JDK 8 (1.8.0_261).
 
