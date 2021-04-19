@@ -1,15 +1,18 @@
 package phipgn.sloppy_test.bdd.steps;
 
 import org.junit.Assert;
+import org.testng.ITestResult;
 
+import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import phipgn.sloppy_test.helpers.StringHelper;
 import phipgn.sloppy_test.pages.HomePage;
+import phipgn.sloppy_test.tests.BaseTest;
 
-public class SearchCitySteps extends BaseSteps {
+public class SearchCitySteps extends BaseTest {
 
 	private HomePage homePage;
 	private String error;
@@ -23,8 +26,8 @@ public class SearchCitySteps extends BaseSteps {
 	}
 
 	@After
-	public void afterScenario() {
-		closeBrowser();
+	public void afterScenario(Scenario scenario) {
+		closeBrowser(scenario);
 	}
 
 	@Given("^User launches and maximizes the browser$")

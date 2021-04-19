@@ -15,7 +15,7 @@ import cucumber.api.junit.Cucumber;
 			"html:target/cucumber-reports",
 			"junit:target/cucumber-reports/Cucumber.xml",
 			"json:target/cucumber-reports/Cucumber.json"},
-	tags = { "@searchCity" }
+	tags = { "@validCities" }
 )
 public class TestRunner {
 }

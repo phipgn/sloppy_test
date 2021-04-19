@@ -8,23 +8,23 @@
       <![CDATA[Clicking on By.cssSelector: .search button[type='submit']]]>
     </line>
     <line>
-      <![CDATA[Clicking on [[ChromeDriver: chrome on WINDOWS (b8a63e4e6997354308ce999591171509)] -> css selector: .search .search-dropdown-menu li]]]>
+      <![CDATA[Clicking on [[ChromeDriver: chrome on WINDOWS (72e2c6579d8d726de280e1b9ccf5bdd5)] -> css selector: .search .search-dropdown-menu li]]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="55570" started-at="2021-04-18T19:25:06 ICT" finished-at="2021-04-18T19:26:01 ICT">
+  <suite name="Default suite" duration-ms="14763" started-at="2021-04-19T20:10:51 ICT" finished-at="2021-04-19T20:11:06 ICT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="55570" started-at="2021-04-18T19:25:06 ICT" finished-at="2021-04-18T19:26:01 ICT">
+    <test name="Default test" duration-ms="14763" started-at="2021-04-19T20:10:51 ICT" finished-at="2021-04-19T20:11:06 ICT">
       <class name="phipgn.sloppy_test.tests.SearchTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:phipgn.sloppy_test.tests.SearchTest@40005471]" name="beforeTest" is-config="true" duration-ms="9" started-at="2021-04-18T19:25:06 ICT" finished-at="2021-04-18T19:25:06 ICT">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:phipgn.sloppy_test.tests.SearchTest@e320068]" name="beforeTest" is-config="true" duration-ms="20" started-at="2021-04-19T20:10:51 ICT" finished-at="2021-04-19T20:10:51 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:phipgn.sloppy_test.tests.SearchTest@40005471]" name="beforeMethod" is-config="true" duration-ms="8344" started-at="2021-04-18T19:25:06 ICT" finished-at="2021-04-18T19:25:14 ICT">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:phipgn.sloppy_test.tests.SearchTest@e320068]" name="beforeMethod" is-config="true" duration-ms="8787" started-at="2021-04-19T20:10:52 ICT" finished-at="2021-04-19T20:11:00 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test_U001_SearchValidCities(java.lang.String)[pri:0, instance:phipgn.sloppy_test.tests.SearchTest@40005471]" name="test_U001_SearchValidCities" duration-ms="8945" started-at="2021-04-18T19:25:14 ICT" data-provider="Valid cities" finished-at="2021-04-18T19:25:23 ICT">
+        <test-method status="PASS" signature="test_U001_SearchValidCities(java.lang.String)[pri:0, instance:phipgn.sloppy_test.tests.SearchTest@e320068]" name="test_U001_SearchValidCities" duration-ms="3405" started-at="2021-04-19T20:11:00 ICT" data-provider="Valid cities" finished-at="2021-04-19T20:11:04 ICT">
           <params>
             <param index="0">
               <value>
@@ -40,15 +40,15 @@
               <![CDATA[Clicking on By.cssSelector: .search button[type='submit']]]>
             </line>
             <line>
-              <![CDATA[Clicking on [[ChromeDriver: chrome on WINDOWS (b8a63e4e6997354308ce999591171509)] -> css selector: .search .search-dropdown-menu li]]]>
+              <![CDATA[Clicking on [[ChromeDriver: chrome on WINDOWS (72e2c6579d8d726de280e1b9ccf5bdd5)] -> css selector: .search .search-dropdown-menu li]]]>
             </line>
           </reporter-output>
         </test-method> <!-- test_U001_SearchValidCities -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:phipgn.sloppy_test.tests.SearchTest@40005471]" name="afterMethod" is-config="true" duration-ms="38226" started-at="2021-04-18T19:25:23 ICT" finished-at="2021-04-18T19:26:01 ICT">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:phipgn.sloppy_test.tests.SearchTest@e320068]" name="afterMethod" is-config="true" duration-ms="2419" started-at="2021-04-19T20:11:04 ICT" finished-at="2021-04-19T20:11:06 ICT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test_U001_SearchValidCities status=SUCCESS method=SearchTest.test_U001_SearchValidCities(java.lang.String)[pri:0, instance:phipgn.sloppy_test.tests.SearchTest@40005471] output=Inputting 'London, GB' into By.xpath: //input[@placeholder='Search city']]]]>
+                <![CDATA[[TestResult name=test_U001_SearchValidCities status=SUCCESS method=SearchTest.test_U001_SearchValidCities(java.lang.String)[pri:0, instance:phipgn.sloppy_test.tests.SearchTest@e320068] output=Inputting 'London, GB' into By.xpath: //input[@placeholder='Search city']]]]>
               </value>
             </param>
           </params>

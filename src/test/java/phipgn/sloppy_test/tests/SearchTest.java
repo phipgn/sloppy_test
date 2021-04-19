@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import phipgn.sloppy_test.helpers.ScreenshotHelper;
 import phipgn.sloppy_test.helpers.StringHelper;
 import phipgn.sloppy_test.pages.HomePage;
 
@@ -32,10 +33,7 @@ public class SearchTest extends BaseTest
 	
 	@AfterMethod
 	public void afterMethod(ITestResult result) {
-		if (result.getStatus() == ITestResult.FAILURE) {
-			
-		}
-		closeBrowser();
+		closeBrowser(result);
 	}
 	
 	@DataProvider(name="Valid cities")
