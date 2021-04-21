@@ -31,7 +31,7 @@ Optional items:
 - [x] ~~Provide CI/CD integration solution (can explain this)~~
 - [x] ~~Abibility to run test in parallel~~
   - [x] ~~via TestNG~~
-  - [ ] ~~via Cucumber~~
+  - [x] ~~via Cucumber~~
 - [ ] Cloud integration solution
 - [ ] Distribution execution
 
