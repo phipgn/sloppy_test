@@ -5,7 +5,7 @@
     <classes>
       <class name="phipgn.sloppy_test.tests.SearchTest">
         <methods>
-          <include name="test_U001_SearchValidCities" invocation-numbers="1"/>
+          <include name="U001"/>
           <include name="beforeMethod"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>

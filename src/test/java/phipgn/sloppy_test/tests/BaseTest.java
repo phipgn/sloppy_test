@@ -19,8 +19,10 @@ import phipgn.sloppy_test.helpers.ConfigFileHelper;
 import phipgn.sloppy_test.helpers.ScreenshotHelper;
 
 public abstract class BaseTest {
+	protected ConfigFileHelper config = new ConfigFileHelper();
+	protected String testDataDir = config.getProperty(ConfigFileHelper.KEY_DATA); 
+	
 	protected void initDriverAndLoadApplication() {
-		ConfigFileHelper config = new ConfigFileHelper();
 		BrowserFactory.initBrowser(config.getProperty(ConfigFileHelper.KEY_BROWSER));
 		BrowserFactory.maximize();
 		BrowserFactory.loadApplication(config.getProperty(ConfigFileHelper.KEY_URL));

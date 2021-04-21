@@ -1,6 +1,6 @@
 package phipgn.sloppy_test.bdd.steps;
 
-import org.junit.Assert;
+import org.testng.Assert;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
@@ -45,7 +45,7 @@ public class SearchCitySteps extends BaseTest {
 	@Then("^User should see a valid search dropdown menu for (.+)$")
 	public void user_should_see_a_valid_search_dropdown_menu(String inputCityName) {
 		waitUntilElementVisible(homePage.searchDropdownOptions, 10);
-		Assert.assertTrue(isElementDisplayed(homePage.searchDropdownOptions));
+		Assert.assertTrue(isElementDisplayed(homePage.searchDropdownOptions), "Search dropdown menu does not show up, test should be halted.");
 		error += homePage.verifySearchDropdownOptions(inputCityName);
 	}
 
@@ -90,6 +90,6 @@ public class SearchCitySteps extends BaseTest {
 	@Then("^User should see search not found message$")
 	public void user_should_see_search_not_found_message() {
 		waitUntilElementVisible(homePage.searchNotFoundText, 10);
-		Assert.assertTrue(isElementDisplayed(homePage.searchNotFoundText));
+		Assert.assertTrue(isElementDisplayed(homePage.searchNotFoundText), "SearchNotFound text is supposed to be diplaying to user.");
 	}
 }

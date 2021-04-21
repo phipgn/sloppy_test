@@ -1,11 +1,10 @@
 package phipgn.sloppy_test.bdd.runners;
 
-import org.junit.runner.RunWith;
+import org.testng.annotations.Test;
 
 import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
+import cucumber.api.testng.AbstractTestNGCucumberTests;
 
-@RunWith(Cucumber.class)
 @CucumberOptions(
 	features = "src/test/java/phipgn/sloppy_test/bdd/features", 
 	glue = { "phipgn.sloppy_test.bdd.steps" }, 
@@ -17,5 +16,7 @@ import cucumber.api.junit.Cucumber;
 			"json:target/cucumber-reports/Cucumber.json"},
 	tags = { "@validCities" }
 )
-public class TestRunner {
+
+@Test
+public class TestRunner extends AbstractTestNGCucumberTests {
 }

@@ -8,20 +8,16 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import phipgn.sloppy_test.helpers.FileHelper;
 import phipgn.sloppy_test.helpers.StringHelper;
 import phipgn.sloppy_test.pages.HomePage;
 
-/**
- * Unit test for simple App.
- */
 public class SearchTest extends BaseTest
 {
 	private HomePage homePage;
 	
 	@BeforeTest
-	public void beforeTest() {
-		
-	}
+	public void beforeTest() { }
 	
 	@BeforeMethod
 	public void beforeMethod() {
@@ -35,23 +31,18 @@ public class SearchTest extends BaseTest
 		closeBrowser(result);
 	}
 	
-	@DataProvider(name="Valid cities")
-	public Object[][] getValidCities() {
-		return new Object[][] { 
-			{ "London" },
-			{ "London, GB" },
-			{ "Haiphong" }, 
-			{ "Hanoi" } 
-		};
-	}
-
-	@Test(dataProvider="Valid cities")
-	public void test_U001_SearchValidCities(String inputCityName) {
+	@DataProvider(name="U001")
+	public Object[][] u001_Data() { return FileHelper.getDataProvider("U001", testDataDir, this.getClass()); }
+	@DataProvider(name="U002")
+	public Object[][] u002_Data() { return FileHelper.getDataProvider("U002", testDataDir, this.getClass()); }
+	
+	@Test(dataProvider = "U001", description = "As a user, I want to search weather with valid city names")
+	public void U001(String query) {
 		String error = "";
-		homePage.searchCity(inputCityName);
+		homePage.searchCity(query);
 		waitUntilElementVisible(homePage.searchDropdownOptions, 10);
-		Assert.assertTrue(isElementDisplayed(homePage.searchDropdownOptions), "Search dropdown menu does not show up, text should be halted.");
-		error += homePage.verifySearchDropdownOptions(inputCityName);
+		Assert.assertTrue(isElementDisplayed(homePage.searchDropdownOptions), "Search dropdown menu does not show up, test should be halted.");
+		error += homePage.verifySearchDropdownOptions(query);
 		
 		String sanitizedSelectedCityName = StringHelper.sanitizeText(homePage.selectRandomDropdownOption());
 		waitUntilElementDisappears(homePage.loader, 10);
@@ -68,18 +59,10 @@ public class SearchTest extends BaseTest
 		Assert.assertTrue(error.equals(""), "Found some errors: " + error);
 	}
 	
-	@DataProvider(name="Invalid cities")
-	public Object[][] getInvalidCities() {
-		return new Object[][] { 
-			{ "in flames" },
-			{ "pod" }
-		};
-	}
-	
-	@Test(dataProvider="Invalid cities")
-	public void test_U002_SearchInvalidCities(String inputCityName) {
-		homePage.searchCity(inputCityName);
+	@Test(dataProvider="U002", description = "As a user, I want to search weather with invalid city names")
+	public void U002(String query) {
+		homePage.searchCity(query);
 		waitUntilElementVisible(homePage.searchNotFoundText, 10);
-		Assert.assertTrue(isElementDisplayed(homePage.searchNotFoundText));
+		Assert.assertTrue(isElementDisplayed(homePage.searchNotFoundText), "SearchNotFound text is supposed to be diplaying to user.");
 	}
 }

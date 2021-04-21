@@ -19,10 +19,9 @@ Feature: Search weather in my city
 
     Examples: 
       | query      |
-      | London     |      
+      | London     |
       | London, GB |
       | Haiphong   |
-      | Hanoi      |
 
   @invalidCities
   Scenario Outline: U002: I want to search weather with invalid cities
