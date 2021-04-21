@@ -13,25 +13,26 @@ At first, I developed the project to run the test using TestNG. Then I added the
 
 **Part 2: UI Automation**
 Acceptance criteria:
-- [x] Using valid verfication/assertion point
-- [x] Provide test reporting solution
-  - [x] TestNG report
-  - [x] Cucumber report
-- [x] Locators
-- [x] POM
-- [x] Browser Factory
+- [x] ~~Using valid verfication/assertion point~~
+- [x] ~~Provide test reporting solution~~
+  - [x] ~~TestNG report~~
+  - [x] ~~Cucumber report~~
+- [x] ~~Locators~~
+- [x] ~~POM~~
 
 Optional items:
-- [x] Proven practical knowledge in writing automation test:
-  - [x] BDD approach
-  - [x] Data driven
-- [x] Support multiple browsers
-  - [x] Chrome
-  - [x] Firefox
-- [x] Capture a screenshot if test fails
-- [x] Provide CI/CD integration solution (can explain this)
+- [x] ~~Proven practical knowledge in writing automation test:~~
+  - [x] ~~BDD approach~~
+  - [x] ~~Data driven~~
+- [x] ~~Support multiple browsers~~
+  - [x] ~~Chrome~~
+  - [x] ~~Firefox~~
+- [x] ~~Capture a screenshot if test fails~~
+- [x] ~~Provide CI/CD integration solution (can explain this)~~
+- [x] ~~Abibility to run test in parallel~~
+  - [x] ~~via TestNG~~
+  - [ ] ~~via Cucumber~~
 - [ ] Cloud integration solution
-- [ ] Abibility to run test in parallel (cannot make it work yet due to some technical issues and tight work schedule)
 - [ ] Distribution execution
 
 # How to run the test from Eclipse IDE?
