@@ -47,8 +47,8 @@ Optional items:
 
 ***Please import the sloppy_test as a Maven project into Eclipse IDE***
 
-![image](https://user-images.githubusercontent.com/22786385/115309099-fce50a80-a195-11eb-9151-fa86df069b6e.png)
-![image](https://user-images.githubusercontent.com/22786385/115309163-1ab26f80-a196-11eb-8576-988c1074c791.png)
+<img src="https://user-images.githubusercontent.com/22786385/115309099-fce50a80-a195-11eb-9151-fa86df069b6e.png" width="400">
+<img src="https://user-images.githubusercontent.com/22786385/115309163-1ab26f80-a196-11eb-8576-988c1074c791.png" width="400">
 
 Make sure to have only JDK bin added to your `Path` system variables. Please remove the Oracle Java path (if any).
 ![image](https://user-images.githubusercontent.com/22786385/115308146-7a0f8000-a194-11eb-9c11-f02559d569c4.png)
@@ -99,7 +99,8 @@ java -cp "target\classes;lib\*" org.testng.TestNG testng.xml
 #### The Cucumber pack:
 Run this command to execute the Cucumber pack from cmd:
 ```
-java -cp target\classes;lib\* cucumber.api.cli.Main --glue phipgn.sloppy_test.bdd.steps src/test/java/phipgn/sloppy_test/bdd/features --plugin pretty
+java -cp target\classes;lib\* cucumber.api.cli.Main --glue phipgn.sloppy_test.bdd.steps src/test/java/phipgn/sloppy_test/bdd/features --tags @searchCity --monochrome --plugin pretty --plugin json:target/cucumber-reports/Cucumber.json --plugin html:target/cucumber-reports --plugin junit:target/cucumber-reports/Cucumber.xml
 ```
+<img src="https://user-images.githubusercontent.com/22786385/115479553-cdf09680-a272-11eb-80f7-120b46a82c5a.png" width="200">
 
-![image](https://user-images.githubusercontent.com/22786385/115310243-b1336080-a197-11eb-8eaf-880d18e92001.png)
+<img src="https://user-images.githubusercontent.com/22786385/115310243-b1336080-a197-11eb-8eaf-880d18e92001.png" width="100" height="100">
