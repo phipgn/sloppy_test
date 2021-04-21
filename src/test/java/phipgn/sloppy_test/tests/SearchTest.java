@@ -16,19 +16,21 @@ public class SearchTest extends BaseTest
 {
 	private HomePage homePage;
 	
+	private SearchTest() { }
+	
 	@BeforeTest
 	public void beforeTest() { }
 	
 	@BeforeMethod
 	public void beforeMethod() {
-		initDriverAndLoadApplication();
-		homePage = new HomePage(getDriver());
-		waitUntilElementDisappears(homePage.loader, 10);
+		setUp();
+		homePage = new HomePage(ui.getDriver());
+		ui.waitUntilElementDisappears(homePage.loader, 10);
 	}
 	
 	@AfterMethod
 	public void afterMethod(ITestResult result) {
-		closeBrowser(result);
+		ui.close(result);
 	}
 	
 	@DataProvider(name = "U001")
@@ -37,32 +39,33 @@ public class SearchTest extends BaseTest
 	public Object[][] u002_Data() { return FileHelper.getDataProvider("U002", testDataDir, this.getClass()); }
 	
 	@Test(dataProvider = "U001", description = "As a user, I want to search weather with valid city names")
-	public void U001(String query) {
+	public void U001(String query) {	
 		String error = "";
+		
 		homePage.searchCity(query);
-		waitUntilElementVisible(homePage.searchDropdownOptions, 10);
-		Assert.assertTrue(isElementDisplayed(homePage.searchDropdownOptions), "Search dropdown menu does not show up, test should be halted.");
+		ui.waitUntilElementVisible(homePage.searchDropdownOptions, 10);
+		Assert.assertTrue(ui.isElementDisplayed(homePage.searchDropdownOptions), "Search dropdown menu does not show up, test should be halted.");
 		error += homePage.verifySearchDropdownOptions(query);
 		
 		String sanitizedSelectedCityName = StringHelper.sanitizeText(homePage.selectRandomDropdownOption());
-		waitUntilElementDisappears(homePage.loader, 10);
+		ui.waitUntilElementDisappears(homePage.loader, 10);
 		
-		error += isElementDisplayed(homePage.cityNameText) ? "" : "City name is not displaying in content section.\n";
-		String sanitizedCityName = StringHelper.sanitizeText(findElement(homePage.cityNameText).getText());
+		error += ui.isElementDisplayed(homePage.cityNameText) ? "" : "City name is not displaying in content section.\n";
+		String sanitizedCityName = StringHelper.sanitizeText(ui.findElement(homePage.cityNameText).getText());
 		error += sanitizedSelectedCityName.contains(sanitizedCityName) ? "" : "City name is displaying incorrectly in content section: " + sanitizedSelectedCityName + ", " + sanitizedCityName + ".\n";
 		
-		error += isElementDisplayed(homePage.hourlyForecastText) ? "" : "Hourly Forecast section is not displaying in content section.\n";
-		error += isElementDisplayed(homePage.minuteForecastText) ? "" : "Minute Forecast section is not displaying in content section.\n";
-		error += isElementDisplayed(homePage.eightDayForecastText) ? "" : "8-Day Forecast section is not displaying in content section.\n";
-		error += isElementDisplayed(homePage.mapSection) ? "" : "Map section is not displaying in content section.\n";
+		error += ui.isElementDisplayed(homePage.hourlyForecastText) ? "" : "Hourly Forecast section is not displaying in content section.\n";
+		error += ui.isElementDisplayed(homePage.minuteForecastText) ? "" : "Minute Forecast section is not displaying in content section.\n";
+		error += ui.isElementDisplayed(homePage.eightDayForecastText) ? "" : "8-Day Forecast section is not displaying in content section.\n";
+		error += ui.isElementDisplayed(homePage.mapSection) ? "" : "Map section is not displaying in content section.\n";
 		
 		Assert.assertTrue(error.equals(""), "Found some errors: " + error);
 	}
 	
-	@Test(dataProvider="U002", description = "As a user, I want to search weather with invalid city names")
-	public void U002(String query) {
+	@Test(dataProvider = "U002", description = "As a user, I want to search weather with invalid city names")
+	public void U002(String query) {		
 		homePage.searchCity(query);
-		waitUntilElementVisible(homePage.searchNotFoundText, 10);
-		Assert.assertTrue(isElementDisplayed(homePage.searchNotFoundText), "SearchNotFound text is supposed to be diplaying to user.");
+		ui.waitUntilElementVisible(homePage.searchNotFoundText, 10);
+		Assert.assertTrue(ui.isElementDisplayed(homePage.searchNotFoundText), "SearchNotFound text is supposed to be diplaying to user.");
 	}
 }
