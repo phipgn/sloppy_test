@@ -17,7 +17,7 @@ public class ScreenshotHelper {
 			String fileName = DateTimeHelper.getCurrentDateTime() + ".png";
 			String filePath = "screenshots/" + fileName;
             FileUtils.copyFile(screenshot, new File(filePath));
-            System.out.println("Screen has been saved at: " + filePath);
+            System.out.println("Screenshot has been saved at: " + filePath);
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
