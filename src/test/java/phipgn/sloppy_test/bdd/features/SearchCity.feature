@@ -3,8 +3,7 @@ Feature: Search weather in my city
   As a user, I want to find the weather information for a specific city
 
   Background: 
-    Given User launches and maximizes the browser
-    And User waits for the loader to be disappeared
+    Given User waits for the loader to be disappeared
 
   @validCities
   Scenario Outline: U001: I want to search weather with valid cities
