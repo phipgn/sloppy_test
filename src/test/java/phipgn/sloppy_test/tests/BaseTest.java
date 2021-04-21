@@ -20,30 +20,31 @@ import phipgn.sloppy_test.helpers.ScreenshotHelper;
 
 public abstract class BaseTest {
 	protected ConfigFileHelper config = new ConfigFileHelper();
-	protected String testDataDir = config.getProperty(ConfigFileHelper.KEY_DATA); 
+	protected String testDataDir = config.getProperty(ConfigFileHelper.KEY_DATA);
+	protected BrowserFactory browserFactory = new BrowserFactory();
 	
 	protected void initDriverAndLoadApplication() {
-		BrowserFactory.initBrowser(config.getProperty(ConfigFileHelper.KEY_BROWSER));
-		BrowserFactory.maximize();
-		BrowserFactory.loadApplication(config.getProperty(ConfigFileHelper.KEY_URL));
+		browserFactory.initBrowser(config.getProperty(ConfigFileHelper.KEY_BROWSER));
+		browserFactory.maximize();
+		browserFactory.loadApplication(config.getProperty(ConfigFileHelper.KEY_URL));
 	}
 	
 	protected WebDriver getDriver() {
-		return BrowserFactory.getDriver();
+		return browserFactory.getDriver();
 	}
 	
 	protected void closeBrowser(ITestResult result) {
 		if (result.getStatus() == ITestResult.FAILURE)
-			ScreenshotHelper.takeScreenshot();
-		BrowserFactory.closeDriver();
-		BrowserFactory.setDriver(null);
+			ScreenshotHelper.takeScreenshot(browserFactory.getDriver());
+		browserFactory.closeDriver();
+		browserFactory.setDriver(null);
 	}
 	
 	protected void closeBrowser(Scenario result) {
 		if (result.isFailed())
-			ScreenshotHelper.takeScreenshot();
-		BrowserFactory.closeDriver();
-		BrowserFactory.setDriver(null);
+			ScreenshotHelper.takeScreenshot(browserFactory.getDriver());
+		browserFactory.closeDriver();
+		browserFactory.setDriver(null);
 	}
 	
 	protected void waitUntilElementDisappears(By by, int timeout) {

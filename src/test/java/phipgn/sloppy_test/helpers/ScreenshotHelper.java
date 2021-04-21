@@ -12,8 +12,7 @@ import phipgn.sloppy_test.drivers.BrowserFactory;
 
 public class ScreenshotHelper {
 	
-	public static void takeScreenshot() {
-		WebDriver driver = BrowserFactory.getDriver();
+	public static void takeScreenshot(WebDriver driver) {
 		File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		try {
 			String fileName = DateTimeHelper.getCurrentDateTime() + ".png";

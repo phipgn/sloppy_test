@@ -31,13 +31,14 @@ public class SearchTest extends BaseTest
 		closeBrowser(result);
 	}
 	
-	@DataProvider(name="U001")
+	@DataProvider(name="U001", parallel=true)
 	public Object[][] u001_Data() { return FileHelper.getDataProvider("U001", testDataDir, this.getClass()); }
-	@DataProvider(name="U002")
+	@DataProvider(name="U002", parallel=true)
 	public Object[][] u002_Data() { return FileHelper.getDataProvider("U002", testDataDir, this.getClass()); }
 	
 	@Test(dataProvider = "U001", description = "As a user, I want to search weather with valid city names")
 	public void U001(String query) {
+		System.out.println(Thread.currentThread().getId());
 		String error = "";
 		homePage.searchCity(query);
 		waitUntilElementVisible(homePage.searchDropdownOptions, 10);
@@ -61,6 +62,7 @@ public class SearchTest extends BaseTest
 	
 	@Test(dataProvider="U002", description = "As a user, I want to search weather with invalid city names")
 	public void U002(String query) {
+		System.out.println(Thread.currentThread().getId());
 		homePage.searchCity(query);
 		waitUntilElementVisible(homePage.searchNotFoundText, 10);
 		Assert.assertTrue(isElementDisplayed(homePage.searchNotFoundText), "SearchNotFound text is supposed to be diplaying to user.");

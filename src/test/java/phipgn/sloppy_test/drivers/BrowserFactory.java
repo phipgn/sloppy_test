@@ -9,19 +9,19 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.GeckoDriverService;
 
 public class BrowserFactory {
-	private static WebDriver driver;
+	private WebDriver driver;
 
-	public static WebDriver getDriver() {
+	public WebDriver getDriver() {
 		if (driver == null)
 			throw new NullPointerException("The WebDriver browser instance was not initialized. You should first call the method InitBrowser.");
 		return driver;
 	}
 
-	public static void setDriver(WebDriver _driver) {
+	public void setDriver(WebDriver _driver) {
 		driver = _driver;
 	}
 
-	public static void initBrowser(String browserName) {
+	public void initBrowser(String browserName) {
 		switch (browserName) {
 		case BrowserName.CHROME:
 			ChromeDriverService chService = new ChromeDriverService.Builder()
@@ -40,19 +40,19 @@ public class BrowserFactory {
 		}
 	}
 	
-	public static void loadApplication(String url) {
+	public void loadApplication(String url) {
 		driver.navigate().to(url);
 	}
 	
-	public static void maximize() {
+	public void maximize() {
 		driver.manage().window().maximize();
 	}
 	
-	public static void closeDriver() {
+	public void closeDriver() {
 		driver.close();
 	}
 	
-	public static void quitDriver() {
+	public void quitDriver() {
 		driver.quit();
 	}
 
