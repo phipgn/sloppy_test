@@ -12,7 +12,6 @@ At first, I developed the project to run the test using TestNG. Then I added the
 - [x] Find bugs and create a Defects Report
 
 **Part 2: UI Automation**
-
 Acceptance criteria:
 - [x] Using valid verfication/assertion point
 - [x] Provide test reporting solution
@@ -35,13 +34,13 @@ Optional items:
 - [ ] Abibility to run test in parallel (cannot make it work yet due to some technical issues and tight work schedule)
 - [ ] Distribution execution
 
-# How to run the test?
+# How to run the test from Eclipse IDE?
 
-### From Eclipse IDE
+---
 #### Software requirements:
 * OS: Windows 10.
 * IDE: Eclipse version 2018-09 (4.9.0).
-    * TestNG plugin installed <span style='color:red'>Make sure to untick `TestNG M2E (Maven) Integration (Optional)` option</span>.
+    * TestNG plugin installed (Make sure to untick `TestNG M2E (Maven) Integration (Optional)` option).
     * Cucubmer plugin installed.
 * JDK 8 (1.8.0_261) installed.
 
@@ -65,12 +64,14 @@ You can configure to run the tests with chrome or firefox as well
 
 <img src="https://user-images.githubusercontent.com/22786385/115310887-d4124480-a198-11eb-80d8-b1f48b359a95.png" width="500">
 
+---
 #### The TestNG pack:
 
 Right click on Search Test > Run as > TestNG
 
 <img src="https://user-images.githubusercontent.com/22786385/115260500-01410180-a15d-11eb-8df9-719e81109068.png" width="500">
 
+---
 #### The Cucumber pack:
 
 Right click on TestRunner > Run as > Junit test
@@ -78,13 +79,15 @@ Right click on TestRunner > Run as > Junit test
 <img src="https://user-images.githubusercontent.com/22786385/115260666-2b92bf00-a15d-11eb-812c-78832c7533bf.png" width="500">
 <img src="https://user-images.githubusercontent.com/22786385/115146698-c74efd00-a081-11eb-9dbc-f6697d05d96a.png" width="500">
 
-### From console
+
+# How to run the test from console?
 Download Maven from: https://maven.apache.org/download.cgi `apache-maven-3.8.1-bin.zip` and extract the zip file to `C:/maven`
 
 Make sure to add Maven bin folder and JDK bin foler to environment path like this:
 
 <img src="https://user-images.githubusercontent.com/22786385/115259995-8f68b800-a15c-11eb-96f6-1f8d859cb2ab.png" width=500">
 
+---
 #### Compile code:
 At `sloppy_test` root directory, run this command first to compile Java source files into class files:
 
@@ -94,14 +97,15 @@ mvn clean compile
 
 ![image](https://user-images.githubusercontent.com/22786385/115310284-bee8e600-a197-11eb-991b-dcd4ec6c368e.png)
 
+---
 #### The TestNG pack:
 Then run this command to execute the TestNG pack from cmd:
 > ```
 java -cp "target\classes;lib\*" org.testng.TestNG testng.xml
 ```
-
 <img src="https://user-images.githubusercontent.com/22786385/115480065-f4fb9800-a273-11eb-8292-c6a4fce7af66.png" width="850">
 
+---
 #### The Cucumber pack:
 Run this command to execute the Cucumber pack from cmd:
 > ```
