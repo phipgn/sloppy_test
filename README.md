@@ -7,9 +7,9 @@ At first, I developed the project to run the test using TestNG. Then I added the
 
 # To-do checklist:
 **Part 1: Test Design and Bug Challenge**
-- [x] Create a test approach
-- [x] Design test cases
-- [x] Find bugs and create a Defects Report
+- [x] ~~Create a test approach~~
+- [x] ~~Design test cases~~
+- [x] ~~Find bugs and create a Defects Report~~
 
 **Part 2: UI Automation**
 Acceptance criteria:
