@@ -40,7 +40,7 @@ Optional items:
 #### Software requirements:
 * OS: Windows 10.
 * IDE: Eclipse version 2018-09 (4.9.0).
-    * TestNG plugin installed (Make sure to untick `TestNG M2E (Maven) Integration (Optional)` option).
+    * TestNG plugin installed (Make sure to untick `TestNG M2E (Maven) Integration (Optional)` option when installing).
     * Cucubmer plugin installed.
 * JDK 8 (1.8.0_261) installed.
 
@@ -53,11 +53,13 @@ Make sure to have only JDK bin added to your `Path` system variables. Please rem
 
 <img src="https://user-images.githubusercontent.com/22786385/115308146-7a0f8000-a194-11eb-9c11-f02559d569c4.png" width="500">
 
-In Eclipse, under Windows > Preferences > Java > Installed JREs: Make sure you selected jdk directory.
+In Eclipse, under Windows > Preferences > Java > Installed JREs: Make sure you selected JDK directory as your JRE.
 
 <img src="https://user-images.githubusercontent.com/22786385/115308535-1043a600-a195-11eb-962a-6ecb0ec63431.png" width="500">
-
 <img src="https://user-images.githubusercontent.com/22786385/115308701-5436ab00-a195-11eb-93ce-3a19d8cf00dd.png" width="500">
+
+Make sure your `JRE System Library` is 1.8 at least.
+
 <img src="https://user-images.githubusercontent.com/22786385/115308654-41bc7180-a195-11eb-9a8f-cca95c0219c3.png" width="500">
 
 You can configure to run the tests with chrome or firefox as well
@@ -121,3 +123,5 @@ Run this command to execute the Cucumber pack parallelly from cmd:
 
 <img src="https://user-images.githubusercontent.com/22786385/115479553-cdf09680-a272-11eb-80f7-120b46a82c5a.png">
 <img src="https://user-images.githubusercontent.com/22786385/115479751-48211b00-a273-11eb-8892-a663bbf21b2b.png" width="850">
+<img src="https://user-images.githubusercontent.com/22786385/115557965-6ff89900-a2dc-11eb-8af7-86dc0fd4875e.png" width="850">
+
