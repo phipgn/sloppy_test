@@ -100,7 +100,7 @@ mvn clean compile
 ---
 #### The TestNG pack:
 Then run this command to execute the TestNG pack from cmd:
-> ```
+```
 java -cp "target\classes;lib\*" org.testng.TestNG testng.xml
 ```
 <img src="https://user-images.githubusercontent.com/22786385/115480065-f4fb9800-a273-11eb-8292-c6a4fce7af66.png" width="850">
@@ -108,7 +108,7 @@ java -cp "target\classes;lib\*" org.testng.TestNG testng.xml
 ---
 #### The Cucumber pack:
 Run this command to execute the Cucumber pack from cmd:
-> ```
+```
 java -cp target\classes;lib\* cucumber.api.cli.Main --glue phipgn.sloppy_test.bdd.steps src/test/java/phipgn/sloppy_test/bdd/features --tags @searchCity --monochrome --plugin pretty --plugin json:target/cucumber-reports/Cucumber.json --plugin html:target/cucumber-reports --plugin junit:target/cucumber-reports/Cucumber.xml
 ```
 <img src="https://user-images.githubusercontent.com/22786385/115479553-cdf09680-a272-11eb-80f7-120b46a82c5a.png">
