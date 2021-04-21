@@ -51,9 +51,11 @@ Optional items:
 <img src="https://user-images.githubusercontent.com/22786385/115309163-1ab26f80-a196-11eb-8576-988c1074c791.png" width="500">
 
 Make sure to have only JDK bin added to your `Path` system variables. Please remove the Oracle Java path (if any).
+
 <img src="https://user-images.githubusercontent.com/22786385/115308146-7a0f8000-a194-11eb-9c11-f02559d569c4.png" width="500">
 
 In Eclipse, under Windows > Preferences > Java > Installed JREs: Make sure you selected jdk directory.
+
 <img src="https://user-images.githubusercontent.com/22786385/115308535-1043a600-a195-11eb-962a-6ecb0ec63431.png" width="500">
 
 <img src="https://user-images.githubusercontent.com/22786385/115308701-5436ab00-a195-11eb-93ce-3a19d8cf00dd.png" width="500">
@@ -66,11 +68,13 @@ You can configure to run the tests with chrome or firefox as well
 #### The TestNG pack:
 
 Right click on Search Test > Run as > TestNG
+
 <img src="https://user-images.githubusercontent.com/22786385/115260500-01410180-a15d-11eb-8df9-719e81109068.png" width="500">
 
 #### The Cucumber pack:
 
 Right click on TestRunner > Run as > Junit test
+
 <img src="https://user-images.githubusercontent.com/22786385/115260666-2b92bf00-a15d-11eb-812c-78832c7533bf.png" width="500">
 <img src="https://user-images.githubusercontent.com/22786385/115146698-c74efd00-a081-11eb-9dbc-f6697d05d96a.png" width="500">
 
@@ -78,6 +82,7 @@ Right click on TestRunner > Run as > Junit test
 Download Maven from: https://maven.apache.org/download.cgi `apache-maven-3.8.1-bin.zip` and extract the zip file to `C:/maven`
 
 Make sure to add Maven bin folder and JDK bin foler to environment path like this:
+
 <img src="https://user-images.githubusercontent.com/22786385/115259995-8f68b800-a15c-11eb-96f6-1f8d859cb2ab.png" width=500">
 
 #### Compile code:
