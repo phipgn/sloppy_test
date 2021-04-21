@@ -12,6 +12,7 @@ At first, I developed the project to run the test using TestNG. Then I added the
 - [x] ~~Find bugs and create a Defects Report~~
 
 **Part 2: UI Automation**
+
 Acceptance criteria:
 - [x] ~~Using valid verfication/assertion point~~
 - [x] ~~Provide test reporting solution~~
