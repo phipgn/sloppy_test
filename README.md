@@ -101,5 +101,5 @@ Run this command to execute the Cucumber pack from cmd:
 ```
 java -cp target\classes;lib\* cucumber.api.cli.Main --glue phipgn.sloppy_test.bdd.steps src/test/java/phipgn/sloppy_test/bdd/features --tags @searchCity --monochrome --plugin pretty --plugin json:target/cucumber-reports/Cucumber.json --plugin html:target/cucumber-reports --plugin junit:target/cucumber-reports/Cucumber.xml
 ```
-<img src="https://user-images.githubusercontent.com/22786385/115479553-cdf09680-a272-11eb-80f7-120b46a82c5a.png" width="500">
-<img src="https://user-images.githubusercontent.com/22786385/115479751-48211b00-a273-11eb-8892-a663bbf21b2b.png" width="500">
+<img src="https://user-images.githubusercontent.com/22786385/115479553-cdf09680-a272-11eb-80f7-120b46a82c5a.png">
+<img src="https://user-images.githubusercontent.com/22786385/115479751-48211b00-a273-11eb-8892-a663bbf21b2b.png" width="800">
