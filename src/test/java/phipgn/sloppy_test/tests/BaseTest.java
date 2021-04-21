@@ -37,14 +37,12 @@ public abstract class BaseTest {
 		if (result.getStatus() == ITestResult.FAILURE)
 			ScreenshotHelper.takeScreenshot(browserFactory.getDriver());
 		browserFactory.closeDriver();
-		browserFactory.setDriver(null);
 	}
 	
 	protected void closeBrowser(Scenario result) {
 		if (result.isFailed())
 			ScreenshotHelper.takeScreenshot(browserFactory.getDriver());
 		browserFactory.closeDriver();
-		browserFactory.setDriver(null);
 	}
 	
 	protected void waitUntilElementDisappears(By by, int timeout) {

@@ -17,23 +17,23 @@ public class BrowserFactory {
 		return driver;
 	}
 
-	public void setDriver(WebDriver _driver) {
-		driver = _driver;
-	}
-
 	public void initBrowser(String browserName) {
 		switch (browserName) {
 		case BrowserName.CHROME:
 			ChromeDriverService chService = new ChromeDriverService.Builder()
 					.usingDriverExecutable(new File("drivers/chromedriver.exe")).usingAnyFreePort().build();
-			if (driver == null)
-				driver = new ChromeDriver(chService);
+			if (driver == null) {
+				System.out.println("Initializing Chrome driver...");
+				driver = new ChromeDriver(chService);				
+			}				
 			break;
 		case BrowserName.FIREFOX:
 			GeckoDriverService geckoService = new GeckoDriverService.Builder()
 			.usingDriverExecutable(new File("drivers/geckodriver.exe")).usingAnyFreePort().build();
-			if (driver == null)
+			if (driver == null) {
+				System.out.println("Initializing Gecko driver...");
 				driver = new FirefoxDriver(geckoService);
+			}
 			break;
 		default:
 			break;
@@ -41,7 +41,7 @@ public class BrowserFactory {
 	}
 	
 	public void loadApplication(String url) {
-		driver.navigate().to(url);
+		driver.get(url);
 	}
 	
 	public void maximize() {
@@ -49,7 +49,9 @@ public class BrowserFactory {
 	}
 	
 	public void closeDriver() {
+		System.out.println("Closing driver...");
 		driver.close();
+		driver = null;
 	}
 	
 	public void quitDriver() {

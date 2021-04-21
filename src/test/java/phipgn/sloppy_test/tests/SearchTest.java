@@ -61,7 +61,6 @@ public class SearchTest extends BaseTest
 	
 	@Test(dataProvider="U002", description = "As a user, I want to search weather with invalid city names")
 	public void U002(String query) {
-		System.out.println(Thread.currentThread().getId());
 		homePage.searchCity(query);
 		waitUntilElementVisible(homePage.searchNotFoundText, 10);
 		Assert.assertTrue(isElementDisplayed(homePage.searchNotFoundText), "SearchNotFound text is supposed to be diplaying to user.");

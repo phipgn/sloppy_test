@@ -11,10 +11,13 @@ import org.openqa.selenium.WebDriver;
 public class ScreenshotHelper {
 	
 	public static void takeScreenshot(WebDriver driver) {
+		System.out.println("Test failed. Taking a screenshot...");
 		File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		try {
 			String fileName = DateTimeHelper.getCurrentDateTime() + ".png";
-            FileUtils.copyFile(screenshot, new File("screenshots/" + fileName));
+			String filePath = "screenshots/" + fileName;
+            FileUtils.copyFile(screenshot, new File(filePath));
+            System.out.println("Screen has been saved at: " + filePath);
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
