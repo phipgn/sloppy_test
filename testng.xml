@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" data-provider-thread-count="2">
-	<!-- test parallel="methods" thread-count="2" name="Test" -->
+<suite name="Suite">
 	<test name="Test">
 		<classes>
 			<class name="phipgn.sloppy_test.tests.SearchTest" />

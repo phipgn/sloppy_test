@@ -31,14 +31,13 @@ public class SearchTest extends BaseTest
 		closeBrowser(result);
 	}
 	
-	@DataProvider(name="U001", parallel=true)
+	@DataProvider(name = "U001")
 	public Object[][] u001_Data() { return FileHelper.getDataProvider("U001", testDataDir, this.getClass()); }
-	@DataProvider(name="U002", parallel=true)
+	@DataProvider(name = "U002")
 	public Object[][] u002_Data() { return FileHelper.getDataProvider("U002", testDataDir, this.getClass()); }
 	
 	@Test(dataProvider = "U001", description = "As a user, I want to search weather with valid city names")
 	public void U001(String query) {
-		System.out.println(Thread.currentThread().getId());
 		String error = "";
 		homePage.searchCity(query);
 		waitUntilElementVisible(homePage.searchDropdownOptions, 10);
