@@ -14,7 +14,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 			"html:target/cucumber-reports",
 			"junit:target/cucumber-reports/Cucumber.xml",
 			"json:target/cucumber-reports/Cucumber.json"},
-	tags = { "@validCities" }
+	tags = { "@searchCity" }
 )
 
 @Test
