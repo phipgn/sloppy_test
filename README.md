@@ -5,7 +5,7 @@ This is a take-home assignment from NAB. I made up an automation test project an
 
 At first, I developed the project to run the test using TestNG. Then I added the Cucumber feature into it. That's why we have 2 packs (TestNG pack and Cucumber pack) here.
 
-## To-do checklist:
+# To-do checklist:
 **Part 1: Test Design and Bug Challenge**
 - [x] Create a test approach
 - [x] Design test cases
@@ -35,7 +35,7 @@ Optional items:
 - [ ] Abibility to run test in parallel (cannot make it work yet due to some technical issues and tight work schedule)
 - [ ] Distribution execution
 
-## How to run the test?
+# How to run the test?
 
 ### From Eclipse IDE
 #### Software requirements:
@@ -59,7 +59,8 @@ In Eclipse, under Windows > Preferences > Java > Installed JREs: Make sure you s
 <img src="https://user-images.githubusercontent.com/22786385/115308701-5436ab00-a195-11eb-93ce-3a19d8cf00dd.png" width="500">
 <img src="https://user-images.githubusercontent.com/22786385/115308654-41bc7180-a195-11eb-9a8f-cca95c0219c3.png" width="500">
 
-You can configure to run the tests with chrome or firefox as well:
+You can configure to run the tests with chrome or firefox as well
+
 <img src="https://user-images.githubusercontent.com/22786385/115310887-d4124480-a198-11eb-80d8-b1f48b359a95.png" width="500">
 
 #### The TestNG pack:
