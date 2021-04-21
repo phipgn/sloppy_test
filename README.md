@@ -65,13 +65,13 @@ You can configure to run the tests with chrome or firefox as well
 
 #### The TestNG pack:
 
-Right click on Search Test > Run as > TestNG
+Right click on `Search Test > Run As > TestNG Test`
 
 <img src="https://user-images.githubusercontent.com/22786385/115260500-01410180-a15d-11eb-8df9-719e81109068.png" width="500">
 
 #### The Cucumber pack:
 
-Right click on TestRunner > Run as > Junit test
+Right click on `TestRunner > Run As > TestNG Test`
 
 <img src="https://user-images.githubusercontent.com/22786385/115260666-2b92bf00-a15d-11eb-812c-78832c7533bf.png" width="500">
 <img src="https://user-images.githubusercontent.com/22786385/115146698-c74efd00-a081-11eb-9dbc-f6697d05d96a.png" width="500">
@@ -89,7 +89,7 @@ At `sloppy_test` root directory, run this command first to compile Java source f
 
 ```mvn clean compile```
 
-![image](https://user-images.githubusercontent.com/22786385/115310284-bee8e600-a197-11eb-991b-dcd4ec6c368e.png)
+<img src="https://user-images.githubusercontent.com/22786385/115310284-bee8e600-a197-11eb-991b-dcd4ec6c368e.png" width="500">
 
 #### The TestNG pack:
 Then run this command to execute the TestNG pack from cmd:
