@@ -8,8 +8,6 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
-import phipgn.sloppy_test.drivers.BrowserFactory;
-
 public class ScreenshotHelper {
 	
 	public static void takeScreenshot(WebDriver driver) {
