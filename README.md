@@ -75,6 +75,7 @@ Or Right click on `testng.xml > Run As > TestNG Suite` (by default settings, tes
 <img src="https://user-images.githubusercontent.com/22786385/115555905-4179be80-a2da-11eb-9838-f72703632b00.png" width="500">
 
 Test data for TestNG data driven could be found under `test_data/` directory. Data will be mapped with test methods automatically based on class names and method names.
+
 ![image](https://user-images.githubusercontent.com/22786385/115557178-abdf2e80-a2db-11eb-9add-66ada46c7c98.png)
 
 #### The Cucumber pack:
