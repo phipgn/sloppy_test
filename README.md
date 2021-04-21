@@ -66,17 +66,23 @@ You can configure to run the tests with chrome or firefox as well
 
 #### The TestNG pack:
 
-Right click on `Search Test > Run As > TestNG Test`
+Right click on `SearchTest.java > Run As > TestNG Test`. (`SearchTestParallel.java` is there just to demo the ability of running tests parallely via TestNG).
 
-<img src="https://user-images.githubusercontent.com/22786385/115260500-01410180-a15d-11eb-8df9-719e81109068.png" width="500">
+<img src="https://user-images.githubusercontent.com/22786385/115555789-2018d280-a2da-11eb-84b2-9901858f6b64.png" width="500">
+
+Or Right click on `testng.xml > Run As > TestNG Suite` (by default settings, tests would be running parallelly by 2 threads)
+
+<img src="https://user-images.githubusercontent.com/22786385/115555905-4179be80-a2da-11eb-9838-f72703632b00.png" width="500">
+
+Test data for TestNG data driven could be found under `test_data/` directory. Data will be mapped with test methods automatically based on class names and method names.
+![image](https://user-images.githubusercontent.com/22786385/115557178-abdf2e80-a2db-11eb-9add-66ada46c7c98.png)
 
 #### The Cucumber pack:
 
 Right click on `TestRunner > Run As > TestNG Test`
 
-<img src="https://user-images.githubusercontent.com/22786385/115260666-2b92bf00-a15d-11eb-812c-78832c7533bf.png" width="500">
-<img src="https://user-images.githubusercontent.com/22786385/115146698-c74efd00-a081-11eb-9dbc-f6697d05d96a.png" width="500">
-
+<img src="https://user-images.githubusercontent.com/22786385/115556031-65d59b00-a2da-11eb-8004-2b0c561a944f.png" width="500">
+<img src="https://user-images.githubusercontent.com/22786385/115556218-a33a2880-a2da-11eb-848c-8449e9b7ab5a.png" width="500">
 
 # How to run the test from console?
 Download Maven from: https://maven.apache.org/download.cgi `apache-maven-3.8.1-bin.zip` and extract the zip file to `C:/maven`
@@ -97,12 +103,20 @@ Then run this command to execute the TestNG pack from cmd:
 
 ```java -cp "target\classes;lib\*" org.testng.TestNG testng.xml```
 
+Run this command to execute the TestNG pack parallelly from cmd:
+
+```java -cp "target\classes;lib\*" org.testng.TestNG testng.xml -parallel classes -threadcount 2```
+
 <img src="https://user-images.githubusercontent.com/22786385/115480065-f4fb9800-a273-11eb-8292-c6a4fce7af66.png" width="850">
 
 #### The Cucumber pack:
 Run this command to execute the Cucumber pack from cmd:
 
 ```java -cp target\classes;lib\* cucumber.api.cli.Main --glue phipgn.sloppy_test.bdd.steps src/test/java/phipgn/sloppy_test/bdd/features --tags @searchCity --monochrome --plugin pretty --plugin json:target/cucumber-reports/Cucumber.json --plugin html:target/cucumber-reports --plugin junit:target/cucumber-reports/Cucumber.xml```
+
+Run this command to execute the Cucumber pack parallelly from cmd:
+
+```java -cp target\classes;lib\* cucumber.api.cli.Main --glue phipgn.sloppy_test.bdd.steps src/test/java/phipgn/sloppy_test/bdd/features --tags @searchCity --monochrome --plugin pretty --plugin json:target/cucumber-reports/Cucumber.json --plugin html:target/cucumber-reports --plugin junit:target/cucumber-reports/Cucumber.xml --threads 2```
 
 <img src="https://user-images.githubusercontent.com/22786385/115479553-cdf09680-a272-11eb-80f7-120b46a82c5a.png">
 <img src="https://user-images.githubusercontent.com/22786385/115479751-48211b00-a273-11eb-8892-a663bbf21b2b.png" width="850">
