@@ -1,8 +1,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-	<test name="Test" parallel="methods" thread-count="2">
+<suite name="Suite" parallel="classes" thread-count="2">
+	<test name="Test">
 		<classes>
 			<class name="phipgn.sloppy_test.tests.SearchTest" />
+			<class name="phipgn.sloppy_test.tests.SearchTestParallel" />
 		</classes>
 	</test>
 </suite>

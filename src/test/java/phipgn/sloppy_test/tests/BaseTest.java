@@ -6,7 +6,7 @@ import phipgn.sloppy_test.helpers.ConfigFileHelper;
 public abstract class BaseTest {
 	private ConfigFileHelper config;
 	protected String testDataDir;
-	protected BrowserFactory ui;
+	protected BrowserFactory ui = null;
 	
 	protected BaseTest() {
 		config = new ConfigFileHelper();
