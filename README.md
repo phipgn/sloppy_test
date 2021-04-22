@@ -128,6 +128,8 @@ Run this command to execute the Cucumber pack parallelly from cmd:
 
 # CI/CD Pipeline
 
+_(CI/CD Pipeline diagram here...)_
+
 For the CI scheduler, I set up a local Jenkins with both master and agent on my local machine.
 
 <img src="https://user-images.githubusercontent.com/22786385/115793704-c78b2780-a3f6-11eb-9ef3-8e8334a9d4f3.png" width="850">
