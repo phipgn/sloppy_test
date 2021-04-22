@@ -126,10 +126,11 @@ Run this command to execute the Cucumber pack parallelly from cmd:
 <img src="https://user-images.githubusercontent.com/22786385/115479751-48211b00-a273-11eb-8892-a663bbf21b2b.png" width="850">
 <img src="https://user-images.githubusercontent.com/22786385/115557965-6ff89900-a2dc-11eb-8af7-86dc0fd4875e.png" width="850">
 
-# CI/CD
+# CI/CD Pipeline
 
-I set up a local Jenkins with both master and agent on my local machine.
+For the CI scheduler, I set up a local Jenkins with both master and agent on my local machine.
 
 <img src="https://user-images.githubusercontent.com/22786385/115793704-c78b2780-a3f6-11eb-9ef3-8e8334a9d4f3.png" width="850">
 <img src="https://user-images.githubusercontent.com/22786385/115793711-cd810880-a3f6-11eb-85df-5f7142cfea1e.png" width="850">
 
+_(continue...)_
