@@ -11,7 +11,6 @@ Feature: Search weather in my city
     Then User should see a valid search dropdown menu for <query>
     And User selects a random dropdown option
     Then Hourly Forecast section should be diplaying in content section
-    Then Minute Forecast section should be diplaying in content section
     Then Eight-Day Forecast section should be diplaying in content section
     Then Map should be displaying in content section
     Then All the verifications should be passed

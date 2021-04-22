@@ -20,6 +20,7 @@ import org.testng.ITestResult;
 
 import cucumber.api.Scenario;
 import phipgn.sloppy_test.helpers.ScreenshotHelper;
+import phipgn.sloppy_test.helpers.StringHelper;
 
 public class BrowserFactory {
 	private WebDriver driver;
@@ -83,7 +84,7 @@ public class BrowserFactory {
 
 	public void waitUntilElementDisappears(By by, int timeout) {
 		WebDriverWait wait = new WebDriverWait(driver, timeout);
-		wait.until(ExpectedConditions.invisibilityOfElementLocated(by));
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(by));		
 	}
 
 	public void waitUntilElementVisible(final By by, int timeout) {
@@ -92,11 +93,23 @@ public class BrowserFactory {
                 .pollingEvery(Duration.ofSeconds(1))
                 .ignoring(NoSuchElementException.class);
 	    wait.until(new Function<WebDriver, Boolean>() {
-
 			public Boolean apply(WebDriver t) {
 				return driver.findElements(by).size() > 0;
-			}
-	    	
+			}	    	
+	    });
+	}
+	
+	public void waitUntilElementTextChanged(final By by, String _originalText, int timeout) {
+	    Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+                .withTimeout(Duration.ofSeconds(timeout))
+                .pollingEvery(Duration.ofSeconds(1))
+                .ignoring(NoSuchElementException.class);
+	    wait.until(new Function<WebDriver, Boolean>() {
+			public Boolean apply(WebDriver t) {
+				String actualText = StringHelper.sanitizeText(driver.findElement(by).getText());
+				String originalText = StringHelper.sanitizeText(_originalText);
+				return !originalText.equals(actualText);
+			}	    	
 	    });
 	}
 	

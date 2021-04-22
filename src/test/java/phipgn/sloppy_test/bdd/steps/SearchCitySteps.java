@@ -48,7 +48,9 @@ public class SearchCitySteps extends BaseTest {
 	@Then("User selects a random dropdown option")
 	public void user_selects_a_random_dropdown_option() {
 		String sanitizedSelectedCityName = StringHelper.sanitizeText(homePage.selectRandomDropdownOption());
-		ui.waitUntilElementDisappears(homePage.loader, 10);
+		String originalText = ui.findElement(homePage.cityNameText).getText();
+		ui.waitUntilElementTextChanged(homePage.cityNameText, originalText, 10);
+		
 		String sanitizedCityName = StringHelper.sanitizeText(ui.findElement(homePage.cityNameText).getText());
 		error += sanitizedSelectedCityName.contains(sanitizedCityName) ? ""
 				: "City name is displaying incorrectly in content section: " + sanitizedSelectedCityName + ", "
@@ -59,12 +61,6 @@ public class SearchCitySteps extends BaseTest {
 	public void hourly_Forecast_section_should_be_diplaying_in_content_section() {
 		error += ui.isElementDisplayed(homePage.hourlyForecastText) ? ""
 				: "Hourly Forecast section is not displaying in content section.\n";
-	}
-
-	@Then("Minute Forecast section should be diplaying in content section")
-	public void minute_Forecast_section_should_be_diplaying_in_content_section() {
-		error += ui.isElementDisplayed(homePage.minuteForecastText) ? ""
-				: "Minute Forecast section is not displaying in content section.\n";
 	}
 
 	@Then("Eight-Day Forecast section should be diplaying in content section")

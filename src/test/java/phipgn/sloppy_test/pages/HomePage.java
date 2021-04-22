@@ -35,7 +35,7 @@ public class HomePage extends BasePage {
 	/* Content section */
 	public By cityNameText = By.cssSelector(".section-content h2");
 	public By hourlyForecastText = By.xpath("//div[@id='weather-widget']/div[@class='section-content']//h3[text()='Hourly forecast']");
-	public By minuteForecastText = By.xpath("//div[@id='weather-widget']/div[@class='section-content']//h3[text()='Minute forecast']");
+//	public By minuteForecastText = By.xpath("//div[@id='weather-widget']/div[@class='section-content']//h3[text()='Minute forecast']");
 	public By eightDayForecastText = By.xpath("//div[@id='weather-widget']/div[@class='section-content']//h3[text()='8-day forecast']");
 	public By mapSection = By.cssSelector(".map-section");
 	

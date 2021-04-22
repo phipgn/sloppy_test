@@ -42,14 +42,14 @@ public class SearchTestParallel extends BaseTest
 		error += homePage.verifySearchDropdownOptions(query);
 		
 		String sanitizedSelectedCityName = StringHelper.sanitizeText(homePage.selectRandomDropdownOption());
-		ui.waitUntilElementDisappears(homePage.loader, 10);
+		String originalText = ui.findElement(homePage.cityNameText).getText();
+		ui.waitUntilElementTextChanged(homePage.cityNameText, originalText, 10);
 		
 		error += ui.isElementDisplayed(homePage.cityNameText) ? "" : "City name is not displaying in content section.\n";
 		String sanitizedCityName = StringHelper.sanitizeText(ui.findElement(homePage.cityNameText).getText());
 		error += sanitizedSelectedCityName.contains(sanitizedCityName) ? "" : "City name is displaying incorrectly in content section: " + sanitizedSelectedCityName + ", " + sanitizedCityName + ".\n";
 		
 		error += ui.isElementDisplayed(homePage.hourlyForecastText) ? "" : "Hourly Forecast section is not displaying in content section.\n";
-		error += ui.isElementDisplayed(homePage.minuteForecastText) ? "" : "Minute Forecast section is not displaying in content section.\n";
 		error += ui.isElementDisplayed(homePage.eightDayForecastText) ? "" : "8-Day Forecast section is not displaying in content section.\n";
 		error += ui.isElementDisplayed(homePage.mapSection) ? "" : "Map section is not displaying in content section.\n";
 		
