@@ -29,7 +29,7 @@ Optional items:
   - [x] ~~Chrome~~
   - [x] ~~Firefox~~
 - [x] ~~Capture a screenshot if test fails~~
-- [x] ~~Provide CI/CD integration solution (can explain this)~~
+- [x] ~~Provide CI/CD integration solution~~
 - [x] ~~Abibility to run test in parallel~~
   - [x] ~~via TestNG~~
   - [x] ~~via Cucumber~~
@@ -125,4 +125,11 @@ Run this command to execute the Cucumber pack parallelly from cmd:
 <img src="https://user-images.githubusercontent.com/22786385/115479553-cdf09680-a272-11eb-80f7-120b46a82c5a.png">
 <img src="https://user-images.githubusercontent.com/22786385/115479751-48211b00-a273-11eb-8892-a663bbf21b2b.png" width="850">
 <img src="https://user-images.githubusercontent.com/22786385/115557965-6ff89900-a2dc-11eb-8af7-86dc0fd4875e.png" width="850">
+
+# CI/CD
+
+I set up a local Jenkins with both master and agent on my local machine.
+
+<img src="https://user-images.githubusercontent.com/22786385/115793704-c78b2780-a3f6-11eb-9ef3-8e8334a9d4f3.png" width="850">
+<img src="https://user-images.githubusercontent.com/22786385/115793711-cd810880-a3f6-11eb-85df-5f7142cfea1e.png" width="850">
 
