@@ -3,7 +3,11 @@ This is a take-home assignment from NAB. I made up an automation test project an
 
 *I wrote 2 UI tests* (match with **U001** and **U002** test cases from documents\TestCases.xlsx).
 
-At first, I developed the project to run the test using TestNG. Then I added the Cucumber feature into it. That's why we have 2 packs (TestNG pack and Cucumber pack) here.
+I deleloped this framework under 2 aprroachs: TestNG only and Cucumber layer on top of TestNG. That's why there are 2 ways to execute the test (via TestNG and via Cucumber).
+
+# Framework structure
+
+![image](https://user-images.githubusercontent.com/22786385/115989582-45168980-a5e9-11eb-87c3-cc36a227d6f7.png)
 
 # To-do checklist:
 **Part 1: Test Design and Bug Challenge**
@@ -29,10 +33,10 @@ Optional items:
   - [x] ~~Chrome~~
   - [x] ~~Firefox~~
 - [x] ~~Capture a screenshot if test fails~~
-- [x] ~~Provide CI/CD integration solution~~
 - [x] ~~Abibility to run test in parallel~~
   - [x] ~~via TestNG~~
   - [x] ~~via Cucumber~~
+- [x] ~~Provide CI/CD integration solution~~
 - [ ] Cloud integration solution
 - [ ] Distribution execution
 
@@ -40,10 +44,15 @@ Optional items:
 
 #### Software requirements:
 * OS: Windows 10.
-* IDE: Eclipse version 2018-09 (4.9.0).
+* IDE: [Eclipse JavaEE version 2018-09 (4.9.0)](https://www.eclipse.org/downloads/packages/release/2018-09/r).
     * TestNG plugin installed (Make sure to untick `TestNG M2E (Maven) Integration (Optional)` option when installing).
     * Cucubmer plugin installed.
-* JDK 8 (1.8.0_261) installed.
+    * _These 2 above plugins could be found and installed under Help > Eclipse Marketplace_
+* [JDK 8 (1.8.0_261)](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html) installed.
+
+Optional items:
+* [Freemind (for reading .mm mindmap files)](http://freemind.sourceforge.net/wiki/index.php/Download)
+* [Dia (for reading diagram files)](https://sourceforge.net/projects/dia-installer/files/dia-win32-installer/0.97.2/dia-setup-0.97.2-2-unsigned.exe/download)
 
 ***Please import the sloppy_test as a Maven project into Eclipse IDE***
 
@@ -128,11 +137,14 @@ Run this command to execute the Cucumber pack parallelly from cmd:
 
 # CI/CD Pipeline
 
-_(CI/CD Pipeline diagram here...)_
+For the last 2 items of the to-do checklists, I cannot say that I have hands-on working experience (like how to set up and stuff) with them. But I have experience interacting with them. Based on those experience, I can understand and be able to create the diagrams that depict my ideas and understanding on these 2 items.
+
+![CICDPipeline](https://user-images.githubusercontent.com/22786385/115988399-c2d79680-a5e3-11eb-85cf-19354fa058ba.jpeg)
 
 For the CI scheduler, I set up a local Jenkins with both master and agent on my local machine.
 
 <img src="https://user-images.githubusercontent.com/22786385/115793704-c78b2780-a3f6-11eb-9ef3-8e8334a9d4f3.png" width="850">
 <img src="https://user-images.githubusercontent.com/22786385/115793711-cd810880-a3f6-11eb-85df-5f7142cfea1e.png" width="850">
 
-_(continue...)_
+![DistributedTestExecutionScheme](https://user-images.githubusercontent.com/22786385/115989169-3af38b80-a5e7-11eb-80d0-85dcc924d74d.jpeg)
+
