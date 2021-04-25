@@ -5,6 +5,10 @@ This is a take-home assignment from NAB. I made up an automation test project an
 
 I deleloped this framework under 2 aprroachs: TestNG only and Cucumber layer on top of TestNG. That's why there are 2 ways to execute the test (via TestNG and via Cucumber).
 
+# Framework structure
+
+![image](https://user-images.githubusercontent.com/22786385/115989582-45168980-a5e9-11eb-87c3-cc36a227d6f7.png)
+
 # To-do checklist:
 **Part 1: Test Design and Bug Challenge**
 - [x] ~~Create a test approach~~
