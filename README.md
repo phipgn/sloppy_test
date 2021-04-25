@@ -136,7 +136,7 @@ Run this command to execute the Cucumber pack parallelly from cmd:
 
 # CI/CD Pipeline
 
-For the last 2 items of the to-do checklists, I cannot say that I have hands-on working experience (like how to set up and stuff) with them. But I have experience interacting with them. Based on those experience, I can understand and be able to create the diagrams that depict my understanding on these 2 items.
+For the last 2 items of the to-do checklists, I cannot say that I have hands-on working experience (like how to set up and stuff) with them. But I have experience interacting with them. Based on those experience, I can understand and be able to create the diagrams that depict my ideas and understanding on these 2 items.
 
 ![CICDPipeline](https://user-images.githubusercontent.com/22786385/115988399-c2d79680-a5e3-11eb-85cf-19354fa058ba.jpeg)
 
