@@ -46,7 +46,7 @@ Optional items:
 * JDK 8 (1.8.0_261) installed.
 
 Optional items:
-* [Freemind (for reading .mm mindmap files)[http://freemind.sourceforge.net/wiki/index.php/Download]
+* [Freemind (for reading .mm mindmap files)](http://freemind.sourceforge.net/wiki/index.php/Download)
 * [Dia (for reading diagram files)](https://sourceforge.net/projects/dia-installer/files/dia-win32-installer/0.97.2/dia-setup-0.97.2-2-unsigned.exe/download)
 
 ***Please import the sloppy_test as a Maven project into Eclipse IDE***
