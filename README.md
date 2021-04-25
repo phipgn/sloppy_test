@@ -41,6 +41,8 @@ Optional items:
   - [ ] Cloud integration solution
   - [ ] Distribution execution
 
+---
+
 # How to run the test from Eclipse IDE?
 
 #### Software requirements:
@@ -97,6 +99,14 @@ Right click on `TestRunner > Run As > TestNG Test`
 
 <img src="https://user-images.githubusercontent.com/22786385/115556031-65d59b00-a2da-11eb-8004-2b0c561a944f.png" width="500">
 <img src="https://user-images.githubusercontent.com/22786385/115556218-a33a2880-a2da-11eb-848c-8449e9b7ab5a.png" width="500">
+
+# Note:
+
+If you find some errors about missing libraries or something then it might be resolved just by `Right clicking on the project > Maven > Update project...`
+
+![image](https://user-images.githubusercontent.com/22786385/115995736-a39e3080-a606-11eb-9b47-9b697acb14d4.png)
+
+---
 
 # How to run the test from console?
 Download Maven from: https://maven.apache.org/download.cgi `apache-maven-3.8.1-bin.zip` and extract the zip file to `C:/maven`
