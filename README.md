@@ -44,10 +44,11 @@ Optional items:
 
 #### Software requirements:
 * OS: Windows 10.
-* IDE: Eclipse version 2018-09 (4.9.0).
+* IDE: [Eclipse JavaEE version 2018-09 (4.9.0)](https://www.eclipse.org/downloads/packages/release/2018-09/r).
     * TestNG plugin installed (Make sure to untick `TestNG M2E (Maven) Integration (Optional)` option when installing).
     * Cucubmer plugin installed.
-* JDK 8 (1.8.0_261) installed.
+    * _These 2 above plugins could be found and installed under Help > Eclipse Marketplace_
+* [JDK 8 (1.8.0_261)](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html) installed.
 
 Optional items:
 * [Freemind (for reading .mm mindmap files)](http://freemind.sourceforge.net/wiki/index.php/Download)
