@@ -7,7 +7,7 @@ I deleloped this framework under 2 aprroachs: TestNG only and Cucumber layer on 
 
 # Framework structure
 
-![image](https://user-images.githubusercontent.com/22786385/115989582-45168980-a5e9-11eb-87c3-cc36a227d6f7.png)
+![image](https://user-images.githubusercontent.com/22786385/115995462-7bfa9880-a605-11eb-9d43-b21931536348.png)
 
 # To-do checklist:
 **Part 1: Test Design and Bug Challenge**
@@ -37,8 +37,9 @@ Optional items:
   - [x] ~~via TestNG~~
   - [x] ~~via Cucumber~~
 - [x] ~~Provide CI/CD integration solution~~
-- [ ] Cloud integration solution
-- [ ] Distribution execution
+  - [x] ~~CI/CD integration solution~~
+  - [ ] Cloud integration solution
+  - [ ] Distribution execution
 
 # How to run the test from Eclipse IDE?
 
@@ -137,14 +138,18 @@ Run this command to execute the Cucumber pack parallelly from cmd:
 
 # CI/CD Pipeline
 
-For the last 2 items of the to-do checklists, I cannot say that I have hands-on working experience (like how to set up and stuff) with them. But I have experience interacting with them. Based on those experience, I can understand and be able to create the diagrams that depict my ideas and understanding on these 2 items.
+For the last 2 items of the to-do checklists, I cannot say that I have hands-on working experience (like how to set up and stuff) with them. But I have experience interacting with them. Based on those experience, I can understand and be able to create the diagrams that depict my ideas and understanding on these 2 items. Below is the diagram I made for the CI/CD integration solution. In this big picture, cloud could play an important role, we could utilize the power of cloud services to make less the effort (but with more money I guess). For example, Jenkins agents could be on cloud, the same for Jenkins master... basically, most things in this picture could be on cloud depends on which one we want it to be.
 
 ![CICDPipeline](https://user-images.githubusercontent.com/22786385/115988399-c2d79680-a5e3-11eb-85cf-19354fa058ba.jpeg)
 
-For the CI scheduler, I set up a local Jenkins with both master and agent on my local machine.
+For the CI scheduler, I set up a local Jenkins myself with both master and agent on my local machine. I have experience working with TeamCity but not setting up a full pipeline, just a part of the pipeline specific for automation test. Never setting up a Jenkins master before so yeah, this assignment is a good chance for me to do that. Not a big deal but it's always been a good feeling to do such things.
 
 <img src="https://user-images.githubusercontent.com/22786385/115793704-c78b2780-a3f6-11eb-9ef3-8e8334a9d4f3.png" width="850">
 <img src="https://user-images.githubusercontent.com/22786385/115793711-cd810880-a3f6-11eb-85df-5f7142cfea1e.png" width="850">
+
+ # Distribution Execution
+
+I have very limited ideas of this, but anyway, I drew this diagram out of my understanding for this concept.
 
 ![DistributedTestExecutionScheme](https://user-images.githubusercontent.com/22786385/115989169-3af38b80-a5e7-11eb-80d0-85dcc924d74d.jpeg)
 
